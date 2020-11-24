@@ -28,7 +28,7 @@ class Point1 {
     println("number out of bounds")
   }
 }
-object Main {
+object ClassMain {
   def main(args: Array[String]): Unit = {
 /*    val p1 = new Point(1,2)
     p1.move(2,3)
