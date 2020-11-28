@@ -23,5 +23,14 @@ object OptionMain {
     // filter
     // map
     // foreach(f) 如果为Some则应用f函数 为None则不处理
+
+    // 如何使用Option避免空指针,不用检查Option是否为None
+    // 如果Option为None,调用方法肯定会抛出NoSuchElementException异常
+    // 1.我们使用for遍历Option,把处理逻辑写道for循环里就可以了,如果为None,不会走循环体的内容
+    for (x <- map1) {
+      // 具体的处理逻辑
+    }
+    // 2.也可以使用map方法写具体的逻辑,如果Option为None不会走map里面的逻辑,直接返回None,如果为Some走具体的逻辑
+    // map的返回值要么是Some 要么是None
   }
 }
